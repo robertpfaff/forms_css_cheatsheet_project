@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.instruct {
+color: black;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #B3CEE5;
+}
+
+.login-box {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px);
+}
+
+h2 {
+    font-size: 1.9em;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 310px;
+    border-bottom: 2px solid black;
+    margin-bottom: 27px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+top: -5px;
+
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 0 8px 0 5px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background: silver;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+    margin-top: 25px;
+    background-image: linear-gradient(to bottom, #fff, transparent);
+    background-color: #DDD;
+    border: 1px #DDD solid;
+}
+
+.register-link {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 360px) {
+    .login-box{
+        width: 100%;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    }
+    .input-box{
+        width: 290px;
+    } 
+
+}
+
+* {
+  background-color: #B3CEE5;
+}
+
+table {
+  table-layout: absolute;
+  width: 70%;
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+caption {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  caption-side: top;
+  font-size: 800;
+  height: 50px;
+  padding: 10px;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+  height: 50px;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 50%;
+}
+
+th {
+  font-size: 16px;
+  border: thin solid black;
+
+  }
+
+td {
+  font-size: 15px;
+  font-weight: normal;
+  border: thin solid black;
+  padding: 5px;
+}
+
+.row {
+  color: black;
+  font-weight: 600;
+}
+
+thead,
+tfoot {
+ font-size: 16px;
+}
